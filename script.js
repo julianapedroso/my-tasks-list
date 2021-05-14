@@ -12,7 +12,7 @@ function addTask(){
 }
 
 function clearTasks() {
-  if(confirm('Tem certeza que quer apagar tudo?')) {
+  if(confirm('Tem certeza que deseja apagar todos os itens?')) {
     taskList.innerHTML = ''
   }
 }
