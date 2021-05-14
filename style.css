@@ -60,17 +60,10 @@ body {
   padding: 2rem;
 }
 
-/* .card-content span {
+.card-content span {
   padding-bottom: 1rem;
   font-size: 2rem;
   color: var(--white);
-} */
-
-#task-form {
-  width: 100%;
-  display: flex;
-  padding-bottom: 1rem;
-  border-bottom: var(--ice) solid 1px;
 }
 
 label {
@@ -78,6 +71,13 @@ label {
   font-size: 0.8rem;
   color: var(--white);
   font-weight: normal;
+}
+
+#task-form {
+  width: 100%;
+  display: flex;
+  padding-bottom: 1rem;
+  border-bottom: var(--ice) solid 1px;
 }
 
 #task-form input {
@@ -92,7 +92,7 @@ label {
 
 .btn-add {
   margin-top: 1rem;
-  margin-left: 2rem;
+  margin-left: 1.5rem;
   height: 5vh;
   border: none;
   border-radius: 0.4rem;
@@ -102,7 +102,6 @@ label {
   width: 150px;
   color: var(--white);
   font-size: 14px;
-  cursor: pointer;
   text-transform: uppercase;
 }
 
@@ -119,17 +118,21 @@ label {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  padding: 1.3rem;
+  padding-top: 1rem;
   color: var(--white);
   border-bottom: var(--ice) solid 1px;
 }
 
 .fa-remove {
-  color: #777;
+  color: var(--red);
+}
+
+.delete-item {
+  padding-bottom: 0.5rem;
 }
 
 .task-card h3 {
-  padding: 1.5rem 0;
+  padding: 1.2rem 0;
   color: var(--dark-blue);
   font-weight: 600;
 }
