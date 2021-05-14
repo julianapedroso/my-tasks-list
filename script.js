@@ -11,7 +11,6 @@
 const taskList = document.getElementById("ul-item");
 
 function addTask() {
-  Storage.get();
   const task = document.getElementById("task");
   const taskValue = task.value;
 
@@ -37,6 +36,4 @@ function deleteItem(event) {
       event.target.parentElement.parentElement.remove();
     }
   }
-
-  Storage.set();
 }
