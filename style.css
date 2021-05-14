@@ -2,7 +2,7 @@
   --background: #22272e;
   --gray: #262f37;
   --light-gray: #2d333b;
-  --light-blue: #4ad8ca;
+  --light-blue: #56bae1;
   --dark-blue: #3e9bf5;
   --white: #fff;
   --ice: #f4f4f4;
@@ -84,7 +84,7 @@ label {
   margin-top: 1rem;
   width: 50%;
   height: 5vh;
-  padding: 1rem;
+  padding: 0.5rem;
   margin-bottom: 30px;
   border-radius: 0.4rem;
   border: none;
@@ -107,7 +107,7 @@ label {
 
 .btn-add:hover {
   background-color: var(--light-blue);
-  color: var(--black);
+  color: var(--white);
   font-weight: bold;
   cursor: pointer;
 
@@ -118,17 +118,15 @@ label {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  padding-top: 1rem;
+  align-items: center;
   color: var(--white);
   border-bottom: var(--ice) solid 1px;
 }
 
-.fa-remove {
-  color: var(--red);
-}
-
 .delete-item {
-  padding-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  padding: 1rem 0 1rem 0;
 }
 
 .task-card h3 {
@@ -189,4 +187,39 @@ label {
   color: var(--dark-blue);
   font-weight: bold;
   text-decoration: none;
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
+  .card-content {
+    display: flex;
+    width: 100%;
+    margin: 2rem;
+  }
+}
+
+@media (min-width: 199px) and (max-width: 499px) {
+  .card-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 2rem;
+  }
+
+  #task-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #task-form input {
+    margin-top: 1rem;
+    width: 100%;
+    height: 5vh;
+    padding: 0.5rem;
+    margin-bottom: 0.1rem;
+  }
+
+  .btn-add {
+    margin: 1rem auto;
+    width: 100%;
+  }
 }
