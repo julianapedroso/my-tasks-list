@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="script.js" defer></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet"/>
+
+<title>My Tasks List</title>
+
+</head>
+<body>
+  <main id="container">
+    <h1 id="title">Tasks List</h1>
+    <div class="card">
+      <div class="card-content">
+        <div class="form-card">
+          <label for="task">New Task</label>
+          <div id="task-form">
+            <input type="text" id="task" name="task" value="">
+            <button type="submit" class="btn-add" onclick="addTask()">Add Task</button>
+          </div>
+        </div>
+        <div class="task-card">
+          <h3 class="task-title">Tasks</h3>
+          <ul id='ul-item' class="task-list"></ul>
+          <button id="clear-btn" class="clear-tasks btn-black" onclick="clearTasks()">Clear Tasks</button>
+        </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
