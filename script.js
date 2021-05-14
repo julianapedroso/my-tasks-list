@@ -1,12 +1,12 @@
-const Storage = {
-  get() {
-    return JSON.parse(localStorage.getItem("my-tasks:tasksList")) || [];
-  },
+// const Storage = {
+//   get() {
+//     return JSON.parse(localStorage.getItem("my-tasks:tasksList")) || [];
+//   },
 
-  set(tasks) {
-    localStorage.setItem("my-tasks:tasksList", JSON.stringify(tasks));
-  },
-};
+//   set(tasks) {
+//     localStorage.setItem("my-tasks:tasksList", JSON.stringify(tasks));
+//   },
+// };
 
 const taskList = document.getElementById("ul-item");
 
