@@ -117,8 +117,8 @@ label {
 .list-item-box {
   display: flex;
   justify-content: space-between;
-  list-style: none;
   align-items: center;
+  list-style: none;
   color: var(--white);
   border-bottom: var(--ice) solid 1px;
 }
